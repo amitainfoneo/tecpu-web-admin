@@ -4,14 +4,21 @@ import Index from './Pages/Index';
 import Table from './Pages/Table';
 import Form from './Pages/Form';
 import Layout from './Components/Layout';
-
+import Login from './Auth/Login';
+import ForgetPassword from './Auth/ForgetPassword';
+import SignUp from './Auth/SignUp';
 
 function App() {
   return (
     <div className="App">
-    
       <Routes>
-      <Route element={<Layout />}>
+        
+      <Route path="/login"  element={<Login/>} />
+      <Route path="/sign-up"  element={<SignUp/>} />
+      <Route path="/forget-password"  element={<ForgetPassword/>} />
+
+
+        <Route element={<Layout />}>
         <Route index element={<Index/>} />
         <Route path="/form"  element={<Form/>} />
         <Route path="/table"  element={<Table/>} />
