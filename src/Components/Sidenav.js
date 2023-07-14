@@ -13,7 +13,7 @@ function Sidenav() {
     <aside className ="app-sidebar">
       <ul className ="app-menu">
        <li>
-      <NavLink to="/" className ="app-menu__item">
+      <NavLink to="/dashboard" className ="app-menu__item">
       <i className ="app-menu__icon fa fa-dashboard"></i>  Dashboard
       </NavLink>
       </li>
@@ -31,11 +31,11 @@ function Sidenav() {
       </NavLink>
         </li>
 
-        {/* <li>
-      <NavLink to="/form"  className ="app-menu__item">
-      <i className ="app-menu__icon fa fa-file-code-o"></i> Form
+         <li>
+      <NavLink to="/users"  className ="app-menu__item">
+      <i className ="app-menu__icon fa fa-file-code-o"></i> Users
       </NavLink>
-        </li> */}
+        </li>
       </ul>
     </aside>
 
